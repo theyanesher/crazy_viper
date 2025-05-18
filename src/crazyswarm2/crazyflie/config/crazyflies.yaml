@@ -1,0 +1,41 @@
+robots:
+  cf_1:
+    enabled: true
+    uri: udp://0.0.0.0:19850
+    initial_position: [0.04, 0.04, 0.0]
+    type: cf21
+  cf_2:
+    enabled: true
+    uri: udp://0.0.0.0:19851
+    initial_position: [-21.96, -18.96, 0.0]
+    type: cf21
+  cf_3:
+    enabled: true
+    uri: udp://0.0.0.0:19852
+    initial_position: [-21.96, -3.96, 0.0]
+    type: cf21
+  cf_4:
+    enabled: true
+    uri: udp://0.0.0.0:19853
+    initial_position: [-2.96, -21.96, 0.0]
+    type: cf21
+robot_types:
+  cf21:
+    motion_capture: {enabled: true, marker: default_single_marker, dynamics: default}
+    big_quad: false
+    battery: {voltage_warning: 3.8, voltage_critical: 3.7}
+  cf21_mocap_deck:
+    motion_capture: {enabled: true, marker: mocap_deck, dynamics: default}
+    big_quad: false
+    battery: {voltage_warning: 3.8, voltage_critical: 3.7}
+all:
+  firmware_logging:
+    enabled: true
+    default_topics:
+      pose: {frequency: 10}
+      status: {frequency: 1}
+  firmware_params:
+    commander: {enHighLevel: 1}
+    stabilizer: {estimator: 2, controller: 1}
+    locSrv: {extPosStdDev: 1e-3, extQuatStdDev: 0.05}
+  broadcasts: {num_repeats: 15, delay_between_repeats_ms: 1}

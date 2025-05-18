@@ -1,0 +1,11 @@
+build/
+install/
+log/
+cache/
+src/crazyswarm2/crazyflie_py/__pycache__
+src/crazyswarm2/crazyflie_py/cache/
+src/crazyswarm2/crazyflie_py/maps_train/
+src/crazyswarm2/crazyflie_py/results/gifs
+src/crazyswarm2/crazyflie_py/README.md
+src/crazyswarm2/crazyflie_py/maps_test/
+.vscode/

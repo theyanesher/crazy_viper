@@ -9,7 +9,7 @@
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
-- clone the CrazySim repo outside the workspace 
+- clone the CrazySim repo outside the workspace https://github.com/theyanesher/CrazySim.git
 ```bash
 git clone https://github.com/theyanesher/CrazySim.git
 ```

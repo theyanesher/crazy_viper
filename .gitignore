@@ -9,3 +9,4 @@ src/crazyswarm2/crazyflie_py/results/gifs
 src/crazyswarm2/crazyflie_py/README.md
 src/crazyswarm2/crazyflie_py/maps_test/
 .vscode/
+*.pth
